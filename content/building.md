@@ -48,15 +48,15 @@ command. You may also want to add a maven central mirror repository to your
 1. Checkout the source as described above
 1. Build the source using Maven as described above
 
-```sh
-    mvn eclipse:eclipse
-```
+   ```sh
+   mvn eclipse:eclipse
+   ```
 
-    If this is the first project in your workspace to use maven artifacts you need to create a classpath variable named M2_REPO which contains the full path to your local repository. The eclipse plugin can do this for you with the following command:
+   If this is the first project in your workspace to use maven artifacts you need to create a classpath variable named M2_REPO which contains the full path to your local repository. The eclipse plugin can do this for you with the following command:
 
-```sh
-    mvn eclipse:configure-workspace -Declipse.workspace=$  {path_to_your_workspace}
-```
+   ```sh
+   mvn eclipse:configure-workspace -Declipse.workspace=$  {path_to_your_workspace}
+   ```
 
 1. Start Eclipse (3.4 or later suggested) and create a new workspace
 1. Import the BVal project, by:

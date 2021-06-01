@@ -1,6 +1,6 @@
 Title: Samples
 
-other projects at Apache, and other external projects that use a ASL 2.0
+Here we have collected some Bean Validation samples from our project, other projects at Apache, and other external projects that use a ASL 2.0
 friendly license. Enjoy!
 
 <a name="Samples-bval-samples"></a>

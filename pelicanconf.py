@@ -100,7 +100,7 @@ THEME = './theme/apache'
 PLUGIN_PATHS = ['./theme/plugins']
 # PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader']
 # We are using the default plugin - 'pelican-gfm' which is installed by the build
-PLUGINS = ['pelican-gfm']
+PLUGINS = ['asfgenid', 'pelican-gfm']
 
 # Lifecycle and plugins:
 # (1) Initialization:
@@ -124,17 +124,17 @@ PLUGINS = ['pelican-gfm']
 # }
 
 # Configure the asfgenid plugin
-# ASF_GENID = {
-#    'metadata': True,
-#    'elements': True,
-#    'headings': True,
-#    'headings_re': r'^h[1-4]',
-#    'permalinks': True,
-#    'toc': True,
-#    'toc_headers': r"h[1-4]",
-#    'tables': True,
-#    'debug': False
-# }
+ASF_GENID = {
+    'metadata': False,
+    'elements': False,
+    'headings': True,
+    'headings_re': r'^h[1-4]',
+    'permalinks': True,
+    'toc': False,
+    'toc_headers': r"h[1-4]",
+    'tables': True,
+    'debug': False
+}
 
 # Sitemap Generator
 # SITEMAP = {

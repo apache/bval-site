@@ -18,7 +18,7 @@ how to verify the integrity of downloaded files.
 
 #### Apache BVal 2.0.5 - Java 8 - Bean Validation v2.0 - Released October 26 2020
 Module | Artifact | Signatures | Comments
-- | - | - | -
+--|--|--|--
 Source Distribution | [bval-parent-2.0.5-source-release.zip][src202] | [asc][src-asc202] [sha512][src-sha512202] | -
 JSR380 Implementation | [bval-jsr-2.0.5.jar][jsr202] | [asc][jsr-asc202] [md5][jsr-md5202] [sha1][jsr-sha1202] | `javax.validation.spi.ValidationProvider`
 Implementation Bundle | [org.apache.bval.bundle-2.0.5.jar][bundle202] | [asc][bundle-asc202] [md5][bundle-md5202] [sha1][bundle-sha1202] | `javax.validation.spi.ValidationProvider` w/ OSGi metadata (includes `bval-jsr`)
@@ -43,7 +43,7 @@ Extra Routines and Constraints | [bval-extras-2.0.5.jar][bvextras202] | [asc][bv
 #### Apache BVal 1.1.2 - Java 6 - Bean Validation v1.1 - Released Nov 3 2016
 
 Module | Artifact | Signatures | Comments
-- | - | - | -
+--|--|--|--
 Source Distribution | [bval-parent-1.1.2-source-release.zip][src112] | [asc][src-asc112] [md5][src-md5112] [sha1][src-sha1112] | -
 Core Framework | [bval-core-1.1.2.jar][core112] | [asc][core-asc112] [md5][core-md5112] [sha1][core-sha1112] | -
 JSR349 Implementation | [bval-jsr-1.1.2.jar][jsr112] | [asc][jsr-asc112] [md5][jsr-md5112] [sha1][jsr-sha1112] | `javax.validation.spi.ValidationProvider` (requires `bval-core`)
@@ -86,7 +86,7 @@ Note: this release depends on geronimo-validation_1.1_spec API jar or any offici
 #### Apache BVal 0.5 - Java 5 - Bean Validation v1.0 - Released September 21, 2012
 
 Module | Artifact | Signatures | Comments
-- | - | - | -
+--|--|--|--
 Source Distribution | [bval-parent-0.5-source-release.zip][src] | [asc][src-asc] [md5][src-md5] [sha1][src-sha1] | -
 Core Framework | [bval-core-0.5.jar][core] | [asc][core-asc] [md5][core-md5] [sha1][core-sha1] | -
 JSR303 Implementation | [bval-jsr303-0.5.jar][jsr303] | [asc][jsr303-asc] [md5][jsr303-md5] [sha1][jsr303-sha1] | `javax.validation.spi.ValidationProvider` (requires `bval-core`)
@@ -160,17 +160,16 @@ You'll need to add the following dependencies in your builds (and Maven
 will automatically include the additional transitive dependencies for you):
 
 ```html
-
-    <dependency>
-      <groupId>org.apache.geronimo.specs</groupId>
-      <artifactId>geronimo-validation_1.0_spec</artifactId>
-      <version>1.1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.bval</groupId>
-      <artifactId>org.apache.bval.bundle</artifactId>
-      <version>0.5</version>
-    </dependency>
+<dependency>
+  <groupId>org.apache.geronimo.specs</groupId>
+  <artifactId>geronimo-validation_1.0_spec</artifactId>
+  <version>1.1</version>
+</dependency>
+<dependency>
+  <groupId>org.apache.bval</groupId>
+  <artifactId>org.apache.bval.bundle</artifactId>
+  <version>0.5</version>
+</dependency>
 ```
 
 Maven will determine the transitive dependencies for the artifacts, but if
@@ -178,21 +177,21 @@ you are not using Maven to build your project, then you will also need the
 following dependencies on the classpath:
 
 ```html    
-    <dependency>
-    	<groupId>org.apache.commons</groupId>
-    	<artifactId>commons-lang3</artifactId>
-    	<version>3.1</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.slf4j</groupId>
-    	<artifactId>slf4j-simple</artifactId>
-    	<version>1.6.1</version>
-    </dependency>
-    <dependency>
-    	<groupId>commons-beanutils</groupId>
-    	<artifactId>commons-beanutils</artifactId>
-    	<version>1.8.3</version>
-    </dependency>
+<dependency>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-lang3</artifactId>
+  <version>3.1</version>
+</dependency>
+<dependency>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-simple</artifactId>
+  <version>1.6.1</version>
+</dependency>
+<dependency>
+  <groupId>commons-beanutils</groupId>
+  <artifactId>commons-beanutils</artifactId>
+  <version>1.8.3</version>
+</dependency>
 ```
 
 <a name="Downloads-VerifyingReleases"></a>
@@ -212,22 +211,22 @@ rather than from a
 Then verify the signatures using:
 
 ```sh
-    $ pgpk -a KEYS
-    $ pgpv bval-parent-0.5-source-release.zip.asc
+$ pgpk -a KEYS
+$ pgpv bval-parent-0.5-source-release.zip.asc
 ```
 
 or
 
 ```sh
-    $ pgp -ka KEYS
-    $ pgp bval-parent-0.5-source-release.zip.asc
+$ pgp -ka KEYS
+$ pgp bval-parent-0.5-source-release.zip.asc
 ```
 
 or
 
 ```sh
-    $ gpg --import KEYS
-    $ gpg --verify bval-parent-0.5-source-release.zip.asc
+$ gpg --import KEYS
+$ gpg --verify bval-parent-0.5-source-release.zip.asc
 ```
 
 Alternatively, you can verify the MD5 signature on the files. A Unix/Linux
