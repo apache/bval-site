@@ -1,0 +1,2 @@
+# Maven-generated site is deployed using scm-publish plugin
+mvnsite

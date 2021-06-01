@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- 
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License. 
+-->
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="dev@bval.apache.org" />
+
+  <META http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <META name="Description" content="Apache BVal -- Board Report" />
+  <META name="Keywords" content="Apache BVal Bean Validation JSR-303 JavaEE6" />
+  <META name="Owner" content="dev@bval.apache.org" />
+  <META name="Robots" content="index, follow" />
+  <META name="Security" content="Public" />
+  <META name="Source" content="wiki template" />
+  <META name="DC.Rights" content="Copyright � 2010-2012, The Apache Software Foundation" />
+
+  <!-- Le styles -->
+  <link href="/resources/css/bootstrap.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+  <link href="/resources/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="/resources/css/bval.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/resources/images/feather-small.png">
+
+  <title>Apache BVal</title>
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/index.html"><img src="/resources/images/bval-bean-small.png" alt="Apache BVal" title="Apache BVal" /></a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="/downloads.html">Downloads</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="/samples.html">Samples</a></li>
+                <li><a href="/mvnsite/index.html">Generated Docs</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="https://git-wip-us.apache.org/repos/asf/bval">Source Code</a></li>
+                <li><a href="/coding-standards.html">Coding Standards</a></li>
+                <li><a href="/building.html">Building</a></li>
+                <li><a href="https://issues.apache.org/jira/browse/BVAL">Issue Tracker</a></li>
+                <li><a href="/beanvalidation-tck.html">Bean Validation TCK</a></li>
+                <li><a href="/automated-builds.html">Automated Builds</a></li>
+                <li><a href="/release-management.html">Release Management</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="/board-reports/index.html">Status</a></li>
+                <li><a href="/getting-involved.html">Getting Involved</a></li>
+                <li><a href="/people.html">People</a></li>
+                <li><a href="/mailing-lists.html">Mailing Lists</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="/resources/images/feather-small.png" alt="Apache" title="Apache" /> <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="https://www.apache.org">Home</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Support</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form id="search-form" class="navbar-search pull-right" action="https://www.google.com/cse" method="get">
+            <input value="bval.apache.org" name="sitesearch" type="hidden" />
+            <input class="search-query" name="q" id="query" type="text" />
+          </form>
+          <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=search-form"></script>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="BValContent_Board Report">
+
+    <h2 id="apache-bval-report-june-2018">Apache BVal Report June 2018<a class="headerlink" href="#apache-bval-report-june-2018" title="Permalink">&para;</a></h2>
+<ul>
+<li>The Apache BVal project implements the Java EE Bean Validation
+specification(s) and related extensions, and became a top-level project of
+the foundation on February 15, 2012.</li>
+</ul>
+<h2 id="issues">Issues:<a class="headerlink" href="#issues" title="Permalink">&para;</a></h2>
+<ul>
+<li>There are no issues requiring board attention at this time.</li>
+</ul>
+<h2 id="activity">Activity:<a class="headerlink" href="#activity" title="Permalink">&para;</a></h2>
+<ul>
+<li>The (new) Apache BVal 2.0 codebase now passes the Java Bean Validation 2.0
+TCK.</li>
+<li>Apache BVal 2.0 has a dependency on the Apache Commons Weaver component and
+is awaiting a release compatible with Java 8.</li>
+<li>In the past week we have received a report of a security issue which a member
+of the community has begun to triage.</li>
+</ul>
+<h2 id="health-report">Health report:<a class="headerlink" href="#health-report" title="Permalink">&para;</a></h2>
+<ul>
+<li>We retain a small core of developers with the desire to keep this project
+afloat.</li>
+</ul>
+<h2 id="pmc-changes">PMC changes:<a class="headerlink" href="#pmc-changes" title="Permalink">&para;</a></h2>
+<ul>
+<li>Currently 13 PMC members.</li>
+<li>No new PMC members added in the last 3 months</li>
+<li>Last PMC addition was Romain Manni-Bucau on Mon Nov 18 2013</li>
+</ul>
+<h2 id="committer-base-changes">Committer base changes:<a class="headerlink" href="#committer-base-changes" title="Permalink">&para;</a></h2>
+<ul>
+<li>Currently 14 committers.</li>
+<li>No new changes to the committer base since last report.</li>
+</ul>
+<h2 id="releases">Releases:<a class="headerlink" href="#releases" title="Permalink">&para;</a></h2>
+<ul>
+<li>Last release was 1.1.2 on Wed Nov 02 2016</li>
+</ul>
+<h2 id="jira-activity">JIRA activity:<a class="headerlink" href="#jira-activity" title="Permalink">&para;</a></h2>
+<ul>
+<li>2 JIRA tickets created in the last 3 months</li>
+<li>2 JIRA tickets closed/resolved in the last 3 months</li>
+</ul>
+
+
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <footer>
+      <p>Copyright © 2010-2021 The Apache Software Foundation. Licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.
+        View our <a href="/privacy-policy.html">privacy policy</a>.
+      </p>
+      <p>Apache and the Apache feather logo are trademarks of The Apache Software Foundation. Other names may be trademarks of their respective owners.
+      </p>
+    </footer>
+
+  </div> <!-- /container -->
+
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"; type="text/javascript"></script>
+  <script src="/resources/js/bootstrap.min.js"></script>
+
+</body>
+</html>

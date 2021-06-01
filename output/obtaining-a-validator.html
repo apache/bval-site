@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- 
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License. 
+-->
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="dev@bval.apache.org" />
+
+  <META http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <META name="Description" content="Apache BVal -- Obtaining a validator" />
+  <META name="Keywords" content="Apache BVal Bean Validation JSR-303 JavaEE6" />
+  <META name="Owner" content="dev@bval.apache.org" />
+  <META name="Robots" content="index, follow" />
+  <META name="Security" content="Public" />
+  <META name="Source" content="wiki template" />
+  <META name="DC.Rights" content="Copyright � 2010-2012, The Apache Software Foundation" />
+
+  <!-- Le styles -->
+  <link href="/resources/css/bootstrap.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+  <link href="/resources/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="/resources/css/bval.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/resources/images/feather-small.png">
+
+  <title>Apache BVal</title>
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/index.html"><img src="/resources/images/bval-bean-small.png" alt="Apache BVal" title="Apache BVal" /></a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="/downloads.html">Downloads</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="/samples.html">Samples</a></li>
+                <li><a href="/mvnsite/index.html">Generated Docs</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="https://git-wip-us.apache.org/repos/asf/bval">Source Code</a></li>
+                <li><a href="/coding-standards.html">Coding Standards</a></li>
+                <li><a href="/building.html">Building</a></li>
+                <li><a href="https://issues.apache.org/jira/browse/BVAL">Issue Tracker</a></li>
+                <li><a href="/beanvalidation-tck.html">Bean Validation TCK</a></li>
+                <li><a href="/automated-builds.html">Automated Builds</a></li>
+                <li><a href="/release-management.html">Release Management</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="/board-reports/index.html">Status</a></li>
+                <li><a href="/getting-involved.html">Getting Involved</a></li>
+                <li><a href="/people.html">People</a></li>
+                <li><a href="/mailing-lists.html">Mailing Lists</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="/resources/images/feather-small.png" alt="Apache" title="Apache" /> <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="https://www.apache.org">Home</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Support</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form id="search-form" class="navbar-search pull-right" action="https://www.google.com/cse" method="get">
+            <input value="bval.apache.org" name="sitesearch" type="hidden" />
+            <input class="search-query" name="q" id="query" type="text" />
+          </form>
+          <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=search-form"></script>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="BValContent_Obtaining a validator">
+
+    <p>is only one Bean Validation implementation in your classpath, you can use:</p>
+<pre><code class="language-java">    ValidatorFactory vf = Validation.buildDefaultValidatorFactory();
+</code></pre>
+<p>to obtain the factory. If there are various implementations in the
+classpath, or you want to be sure you are using Apache BVal, you can
+use:</p>
+<pre><code class="language-java">    ValidatorFactory avf =
+        Validation.byProvider(ApacheValidationProvider.class).configure().buildValidatorFactory();
+</code></pre>
+<p>You should usually not instantiate more than one factory; factory creation is a
+costly process. Also, the factory also acts as a cache for the available
+validation constraints.</p>
+<p>Once you have a ValidatorFactory, obtaining a validator just requires you
+to call <code>ValidatorFactory#getValidator()</code>. The validator implementation
+is thread-safe, so you can choose to re-use a single instance of it in all
+your code or create validators on demand: both options should
+perform equally well.</p>
+<p>Below is an example that will create a singleton <code>ValidatorFactory</code> and will
+let you obtain <code>Validator</code>s from it:</p>
+<pre><code class="language-java">    public enum MyValidatorFactory  {
+
+        SINGLE_INSTANCE  {
+
+            ValidatorFactory avf =
+                Validation.byProvider(ApacheValidationProvider.class).configure().buildValidatorFactory();
+
+            @Override
+            public Validator getValidator()  {
+                return avf.getValidator();
+            }
+
+        };
+
+        public abstract Validator getValidator(); 
+    }
+</code></pre>
+<p>Using the above class, obtaining a <code>Validator</code> just requires you to call:</p>
+<pre><code class="language-java">    MyValidatorFactory.SINGLE_INSTANCE.getValidator()
+</code></pre>
+<p><a name="Obtainingavalidator-UsingSpring"></a></p>
+<h3 id="using-the-spring-framework">Using <a href="http://www.springsource.org">The Spring Framework</a><a class="headerlink" href="#using-the-spring-framework" title="Permalink">&para;</a></h3>
+<p>If you are using Spring, you can easily inject <code>Validator</code>s into your beans.
+Simply configure the factory in your <code>ApplicationContext</code> by adding:</p>
+<pre><code class="language-xml">    &lt;!-- Validator bean --&gt;
+    &lt;bean id="validator"
+        class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"&gt;
+        &lt;property name="providerClass"
+            value="org.apache.bval.jsr303.ApacheValidationProvider" /&gt;
+    &lt;/bean&gt;
+</code></pre>
+<p>And Spring will be able to inject <code>Validator</code>s and the <code>ValidatorFactory</code> into
+your beans.</p>
+<p><a name="Obtainingavalidator-UsingGoogleGuice"></a></p>
+<h3 id="using-google-guice">Using Google Guice<a class="headerlink" href="#using-google-guice" title="Permalink">&para;</a></h3>
+<p>Apache BVal provides the <code>bval-guice</code> module that simplifies
+integration with <a href="http://code.google.com/p/google-guice/">Google Guice</a>. That module has multiple purposes, such:</p>
+<ul>
+<li>bootstrap Apache BVal using Google Guice;</li>
+<li>obtain <code>javax.validation.ConstraintValidator</code> instances using the Google
+Guice <code>Injector</code> to easily support DI;</li>
+<li>easily inject the <code>javax.validation.Validator</code> reference into components
+that require it;</li>
+<li>easily intercept methods and validate method arguments.</li>
+</ul>
+<p>First of all, users have to add the <code>bval-guice</code> module in the classpath;
+<a href="http://maven.apache.org">Apache Maven</a> users can easily include it just by adding the following
+dependency in the POM:</p>
+<pre><code class="language-xml">    &lt;dependency&gt;
+      &lt;groupId&gt;org.apache.bval&lt;/groupId&gt;
+      &lt;artifactId&gt;bval-guice&lt;/artifactId&gt;
+      &lt;version&gt;0.3-incubating&lt;/version&gt;
+    &lt;/dependency&gt;
+</code></pre>
+<p>Let's have a look at the features:</p>
+<p><a name="Obtainingavalidator-ApacheBValbootstrapping"></a></p>
+<h5>Bootstrapping Apache BVal</h5>
+<p>Simply, the <code>org.apache.bval.guice.ValidationModule</code> is the Google
+Guice module that bootstraps Apache BVal. All users have to do is add
+this module when creating the Google Guice <code>Injector</code>:</p>
+<pre><code class="language-java">    import com.google.inject.Guice;
+    import com.google.inject.Injector;
+
+    import org.apache.bval.guice.ValidationModule;
+
+    Injector injector = Guice.createInjector([...](....html),
+        new ValidationModule(), [...]
+    );
+</code></pre>
+<h5>Obtain <code>javax.validation.ConstraintValidator</code> instances</h5>
+<p>Users can now implement <code>javax.validation.ConstraintValidator</code> classes that
+require <em>Dependency Injection</em> by Google Guice:</p>
+<pre><code class="language-java">    import javax.validation.ConstraintValidator;
+
+    public class MyCustomValidator implements ConstraintValidator&lt;MyAssert, MyType&gt;  {
+
+        private final MyExternalService service;
+
+        @Inject
+        public MyCustomValidator(MyExternalService service)  {
+    	this.service = service;
+        }
+
+        public void initialize(MyAssert annotation)  {
+    	// do something
+        }
+
+        public boolean isValid(MyType value, ConstraintValidatorContext context)  {
+            return value == null || this.service.doSomething(value);
+        }
+    }
+</code></pre>
+<p>Don't forget to bind the <code>MyExternalService</code> class in the Google Guice
+<code>Binder</code>!!!</p>
+<p><a name="Obtainingavalidator-Injectthe_javax.validation.Validator_reference"></a></p>
+<h5>Inject the <code>javax.validation.Validator</code> reference</h5>
+<p>Clients can easily inject <code>javax.validation.Validator</code> instances into
+their custom components just marking it using the Google Guice <code>@Inject</code>
+annotation:</p>
+<pre><code class="language-java">    import javax.validation.Validator;
+
+    public class MyValidatorClient  {
+
+        @Inject
+        private Validator validator;
+
+        public void setValidator(Validator validator)  {
+	    this.validator = validator;
+        }
+
+        // ...
+
+    }
+</code></pre>
+<p>When obtaining <code>MyValidatorClient</code> instances from the <code>Injector</code>, the
+<code>javax.validation.Validator</code> will be automagically bound.</p>
+<h5>Intercept methods and validate method arguments</h5>
+<p>Taking advantage of the Apache BVal extension to validate method
+arguments, the <code>bval-guice</code> module comes with an <em>AOP</em> interceptor,
+automatically initialized in the <code>org.apache.bval.guice.ValidationModule</code>,
+that facilitates the validation of method arguments.</p>
+<p>All users have to do is annotate interested methods with
+<code>org.apache.bval.guice.Validate</code> annotation, then annotate arguments with
+constraints, as follows below:</p>
+<pre><code class="language-java">    import javax.validation.constraints.NotNull;
+    import javax.validation.constraints.Size;
+    
+    import org.apache.bval.guice.Validate;
+    
+    public class MyService  {
+    
+        @Validate(
+    	    groups =  { MyGroup.class },
+    	    validateReturnedValue = true
+        )
+        public Country insertCountry(@NotNull(groups =  { MyGroup.class })
+    	    String name,
+    	    @NotNull(groups =  { MyGroup.class })
+    	    @Size(max = 2, groups =  { MyGroup.class, MyOtherGroup.class })
+    	    String iso2Code,
+    	    @NotNull(groups =  { MyGroup.class })
+    	    @Size(max = 3, groups =  { MyGroup.class, MyOtherGroup.class })
+    	    String iso3Code)  {
+
+    	    return ...;
+        }
+
+    }
+</code></pre>
+<p>The <code>bval-guice @Validate</code> annotation supports 2 values:</p>
+<ul>
+<li><code>groups</code> Class array, <code>{}</code> by default, that specifies the groups to be validated;</li>
+<li><code>validateReturnedValue</code> flag, <code>false</code> by default, indicating whether
+the method's return value should be validated.</li>
+</ul>
+<p><a name="Obtainingavalidator-UsingCDI"></a></p>
+<h3 id="using-cdi">Using CDI<a class="headerlink" href="#using-cdi" title="Permalink">&para;</a></h3>
+<p>Bean Validation integration with <a href="http://jcp.org/en/jsr/summary?id=299">CDI</a> is provided by:</p>
+<ul>
+<li>The Bean Validation integration module of <a href="http://myfaces.apache.org/extensions/cdi/index.html">MyFaces CODI</a></li>
+<li><a href="http://seamframework.org/Seam3/ValidationModule">Seam Validation Module</a></li>
+</ul>
+
+
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <footer>
+      <p>Copyright © 2010-2021 The Apache Software Foundation. Licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.
+        View our <a href="/privacy-policy.html">privacy policy</a>.
+      </p>
+      <p>Apache and the Apache feather logo are trademarks of The Apache Software Foundation. Other names may be trademarks of their respective owners.
+      </p>
+    </footer>
+
+  </div> <!-- /container -->
+
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"; type="text/javascript"></script>
+  <script src="/resources/js/bootstrap.min.js"></script>
+
+</body>
+</html>

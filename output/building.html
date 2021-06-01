@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- 
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License. 
+-->
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="dev@bval.apache.org" />
+
+  <META http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <META name="Description" content="Apache BVal -- Building" />
+  <META name="Keywords" content="Apache BVal Bean Validation JSR-303 JavaEE6" />
+  <META name="Owner" content="dev@bval.apache.org" />
+  <META name="Robots" content="index, follow" />
+  <META name="Security" content="Public" />
+  <META name="Source" content="wiki template" />
+  <META name="DC.Rights" content="Copyright � 2010-2012, The Apache Software Foundation" />
+
+  <!-- Le styles -->
+  <link href="/resources/css/bootstrap.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+.headerlink {
+  visibility: hidden;
+}
+dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink {
+  visibility: visible
+}  </style>
+  <link href="/resources/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="/resources/css/bval.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="https://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/resources/images/feather-small.png">
+
+  <title>Apache BVal</title>
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/index.html"><img src="/resources/images/bval-bean-small.png" alt="Apache BVal" title="Apache BVal" /></a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="/downloads.html">Downloads</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="/samples.html">Samples</a></li>
+                <li><a href="/mvnsite/index.html">Generated Docs</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="https://git-wip-us.apache.org/repos/asf/bval">Source Code</a></li>
+                <li><a href="/coding-standards.html">Coding Standards</a></li>
+                <li><a href="/building.html">Building</a></li>
+                <li><a href="https://issues.apache.org/jira/browse/BVAL">Issue Tracker</a></li>
+                <li><a href="/beanvalidation-tck.html">Bean Validation TCK</a></li>
+                <li><a href="/automated-builds.html">Automated Builds</a></li>
+                <li><a href="/release-management.html">Release Management</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="/board-reports/index.html">Status</a></li>
+                <li><a href="/getting-involved.html">Getting Involved</a></li>
+                <li><a href="/people.html">People</a></li>
+                <li><a href="/mailing-lists.html">Mailing Lists</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="/resources/images/feather-small.png" alt="Apache" title="Apache" /> <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="https://www.apache.org">Home</a></li>
+                <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                <li><a href="https://www.apache.org/foundation/sponsorship.html">Support</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form id="search-form" class="navbar-search pull-right" action="https://www.google.com/cse" method="get">
+            <input value="bval.apache.org" name="sitesearch" type="hidden" />
+            <input class="search-query" name="q" id="query" type="text" />
+          </form>
+          <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=search-form"></script>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="BValContent_Building">
+
+    <h2 id="java">Java<a class="headerlink" href="#java" title="Permalink">&para;</a></h2>
+<p>You will need a recent version of Java SE 5 or later installed to build and run the JUnit tests.</p>
+<p>Apache BVal supports the Oracle (formerly Sun) JDK available at <a href="http://java.oracle.com">http://java.oracle.com</a>.
+The IBM Java SDK at <a href="http://www.ibm.com/developerworks/java/jdk/">http://www.ibm.com/developerworks/java/jdk/</a> should also work and will be supported as well as possible.
+Other Java vendors or versions may work, so please ping the <a href="/mailing-lists.html">Mailing Lists</a> if you encounter problems. We will aim for across-the-board compatibility wherever possible.</p>
+<p><a name="Building-Maven"></a></p>
+<h2 id="maven">Maven<a class="headerlink" href="#maven" title="Permalink">&para;</a></h2>
+<p><a name="Building-CommandLineBuilds"></a></p>
+<h3 id="command-line-builds">Command Line Builds<a class="headerlink" href="#command-line-builds" title="Permalink">&para;</a></h3>
+<p>These instructions describe how to check out the current BVal trunk source
+code from the Apache Software Foundation's <a href="http://subversion.apache.org">Apache Subversion</a>
+source code management repository and build it using the
+<a href="http://maven.apache.org">Apache Maven</a> build tool.
+These utilities support use from the console and are known to work on Windows, Linux and Mac OS X.</p>
+<ol>
+<li>Ensure that you have Java installed and in your path by running:
+<code>java -version</code></li>
+<li>Install Apache Maven, version 2.2.1 or later. If it is installed correctly,
+typing <code>mvn -v</code> from the console will display the expected version number.</li>
+<li>Install Apache Subversion v1.4.x or later.
+If it installed correctly, typing the following command should output help
+information: <code>svn help</code> or <code>svn --version</code></li>
+<li>Create a new directory you want to do your work in, then change to that
+directory from the console.</li>
+<li>Check out the sources by running: <code>svn co http://svn.apache.org/repos/asf/bval/trunk bval-trunk</code>. It will
+check out the sources to a <code>bval-trunk</code> directory (ASF committers use <code>https</code>).</li>
+<li>Change to the <code>bval-trunk</code> directory, which has already been created in
+the previous step.</li>
+<li>Build the code by running: <code>mvn install</code>. The first time you run the
+build, many dependencies are automatically resolved and downloaded. <em>It is
+common for dependency downloading to fail the first time, which will fail
+the build.</em> If any of these dependency downloads fail, just re-run the
+command. You may also want to add a maven central mirror repository to your
+<code>~/.m2/settings.xml</code> file if download times are consistently slow or fail
+(see <a href="http://maven.apache.org/guides/mini/guide-mirror-settings.html">here</a>).</li>
+</ol>
+<p><a name="Building-EclipsewithCommand-lineMavenutilities"></a></p>
+<h2 id="eclipse-with-command-line-maven-utilities">Eclipse with Command-line Maven utilities<a class="headerlink" href="#eclipse-with-command-line-maven-utilities" title="Permalink">&para;</a></h2>
+<ol>
+<li>
+<p>Checkout the source as described above</p>
+</li>
+<li>
+<p>Build the source using Maven as described above</p>
+<pre><code class="language-sh">mvn eclipse:eclipse
+</code></pre>
+<p>If this is the first project in your workspace to use maven artifacts you need to create a classpath variable named M2_REPO which contains the full path to your local repository. The eclipse plugin can do this for you with the following command:</p>
+<pre><code class="language-sh">mvn eclipse:configure-workspace -Declipse.workspace=$  {path_to_your_workspace}
+</code></pre>
+</li>
+<li>
+<p>Start Eclipse (3.4 or later suggested) and create a new workspace</p>
+</li>
+<li>
+<p>Import the BVal project, by:</p>
+<ul>
+<li>Select File --&gt; Import... --&gt; General - Existing Projects into Workspace
+--&gt; Next</li>
+<li>Select root directory = <em>[svn checkout location above]</em></li>
+<li>Press Finish</li>
+</ul>
+</li>
+</ol>
+<p><a name="Building-EclipsewithM2Eclipseplugin"></a></p>
+<h2 id="eclipse-with-m2eclipse-plugin">Eclipse with M2Eclipse plugin<a class="headerlink" href="#eclipse-with-m2eclipse-plugin" title="Permalink">&para;</a></h2>
+<ol>
+<li>Checkout the source as described above</li>
+<li>Build the source using Maven as described above</li>
+<li>Start Eclipse (3.5 Galileo or later is recommended)
+and create a new workspace</li>
+<li>Good references for this M2Eclipse plugin (need to install the plugin
+into your Eclipse environment)
+<ul>
+<li><a href="http://m2eclipse.codehaus.org/">http://m2eclipse.codehaus.org/</a></li>
+<li><a href="http://docs.codehaus.org/display/M2ECLIPSE/Home">http://docs.codehaus.org/display/M2ECLIPSE/Home</a></li>
+<li><a href="http://www.theserverside.com/tt/articles/article.tss?l=Introductiontom2eclipse">http://www.theserverside.com/tt/articles/article.tss?l=Introductiontom2eclipse</a></li>
+</ul>
+</li>
+<li>Import the BVAL project, by:
+<ul>
+<li>Select <strong>File --&gt; Import... --&gt; General -&gt; Maven Projects --&gt; Next</strong></li>
+<li>Select root directory = <em>[svn checkout location above]</em></li>
+<li>All of the <code>pom.xml</code> files should be pre-selected for the <code>svn</code> checkout
+location</li>
+<li>You can affect the naming convention used for the generated Eclipse projects (one for each Maven module).  Click on <strong>Advanced</strong> and fill in the <strong>Name Template</strong> field.  I prefer <strong>TRUNK-</strong><em>artifactId</em> since it helps with workspace organization, but it's your choice.</li>
+<li>Press Finish</li>
+<li><em>Note:</em>  You may get a popup internal error at the end of this Import
+processing.  Not sure what the problem is, but it doesn't seem to affect
+the usage.  This will probably get cleared up soon since Eclipse 3.5 is
+still quite new.</li>
+<li><code>The bval-jsr303</code> module needs the <code>jaxb2:xjc</code> goal to run as part of its
+build process:	Add this to the project's <strong>Maven --&gt; Lifecycle Mapping</strong>
+options under <strong>Goals to invoke after project clean:</strong>.</li>
+</ul>
+</li>
+</ol>
+
+
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <footer>
+      <p>Copyright © 2010-2021 The Apache Software Foundation. Licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.
+        View our <a href="/privacy-policy.html">privacy policy</a>.
+      </p>
+      <p>Apache and the Apache feather logo are trademarks of The Apache Software Foundation. Other names may be trademarks of their respective owners.
+      </p>
+    </footer>
+
+  </div> <!-- /container -->
+
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"; type="text/javascript"></script>
+  <script src="/resources/js/bootstrap.min.js"></script>
+
+</body>
+</html>
