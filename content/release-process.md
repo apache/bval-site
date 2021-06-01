@@ -22,9 +22,9 @@ artifacts and using Nexus can be found on the Maven website at
       1. Review and update `README.txt` if needed.
       1. Commit any changes back to GIT:
 
-      ```sh
-      git commit -a -m "updating files for release" & git push
-      ```
+      	 ```sh
+      	 git commit -a -m "updating files for release" & git push
+      	 ```
 
    1. Stage any Roadmap or Release landing pages on the wiki.
    1. Use `mvn apache-rat:check` to verify the source has the required headers before
@@ -152,52 +152,52 @@ artifacts and using Nexus can be found on the Maven website at
 1. Put the release candidate up for a vote:
    1. Create a `VOTE` email thread on [bval-dev](mailto:dev@bval.apache.org) to record votes as replies, e.g.:
 
-   ```text
-   To: dev@bval.apache.org
-   Subject: [VOTE] Apache BVal <version> Release Candidate
+      ```text
+      To: dev@bval.apache.org
+      Subject: [VOTE] Apache BVal <version> Release Candidate
 
-   I've created a <version> release candidate, with the following artifacts up for a vote:
+      I've created a <version> release candidate, with the following artifacts up for a vote:
 
-   Git source tag:
-   https://gitbox.apache.org/repos/asf?p=bval.git;a=tags
+      Git source tag:
+      https://gitbox.apache.org/repos/asf?p=bval.git;a=tags
 
-   Maven staging repo:
-   https://repository.apache.org/content/repositories/orgapachebval-020/
+      Maven staging repo:
+      https://repository.apache.org/content/repositories/orgapachebval-020/
 
-   Source release:
-   https://dist.apache.org/repos/dist/dev/bval/2.0.0-RC1 (r9999)
+      Source release:
+      https://dist.apache.org/repos/dist/dev/bval/2.0.0-RC1 (r9999)
 
-   Generated site:
-   https://dist.apache.org/repos/dist/dev/bval/2.0.0-RC1/site/index.html
+      Generated site:
+      https://dist.apache.org/repos/dist/dev/bval/2.0.0-RC1/site/index.html
 
-   PGP release keys:
-   http://www.apache.org/dist/bval/KEYS
+      PGP release keys:
+      http://www.apache.org/dist/bval/KEYS
 
-   The vote will be open for at least 72 hours.
+      The vote will be open for at least 72 hours.
 
-   [ ] +1  approve
-   [ ] +0  no opinion
-   [ ] -1  disapprove (and reason why)
-   ```
+      [ ] +1  approve
+      [ ] +0  no opinion
+      [ ] -1  disapprove (and reason why)
+      ```
 
    1. Create a DISCUSS email thread on bval-dev@ for any vote questions, e.g.:
 
-   ```text
-   To: dev@bval.apache.org
-   Subject: [DISCUSS] Apache BVal <version> Release Candidate
+      ```text
+      To: dev@bval.apache.org
+      Subject: [DISCUSS] Apache BVal <version> Release Candidate
 
-   Discussion thread for vote on <version> release candidate, with GIT source tag (r9999999).
+      Discussion thread for vote on <version> release candidate, with GIT source tag (r9999999).
 
-   For more information on the release process, check out http://www.apache.org/dev/release.html .
+      For more information on the release process, check out http://www.apache.org/dev/release.html .
 
-   Some of the things to check before voting are:
-   - does "mvn apache-rat:check" pass on the source
-   - can you build the contents of source-release.zip and GIT tag
-   - do all of the staged jars/zips contain the required LICENSE and NOTICE files
-   - are all of the staged jars signed and the signature verifiable
-   - is the signing key in the project's KEYS file and on a public server (i.e. http://www.apache.org/dist/bval/)
-   - does the release pass the TCK
-   ```
+      Some of the things to check before voting are:
+      - does "mvn apache-rat:check" pass on the source
+      - can you build the contents of source-release.zip and GIT tag
+      - do all of the staged jars/zips contain the required LICENSE and NOTICE files
+      - are all of the staged jars signed and the signature verifiable
+      - is the signing key in the project's KEYS file and on a public server (i.e. http://www.apache.org/dist/bval/)
+      - does the release pass the TCK
+      ```
 
    1. Perform a review of the release and cast your vote. For more details
       on Apache releases see

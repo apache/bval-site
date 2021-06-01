@@ -43,7 +43,7 @@ ASF_DATA_YAML = "asfdata.yaml"
 PAGE_PATHS = ['.']
 
 # Template uses {{base}}
-BASE = './'
+BASE = '/'
 
 # Path with no extension
 PATH_METADATA = '(?P<path_no_ext>.*)\..*'
