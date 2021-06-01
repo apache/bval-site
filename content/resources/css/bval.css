@@ -1,0 +1,27 @@
+body {
+  background-color: #FEFEFF;
+}
+
+.hero-unit, pre, code {
+  background-color: #EFEFF5;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+  background-color: #EFEFF5;
+}
+
+.btn-primary {
+  background-color: #1D5C96;
+}
+
+a {
+  color: #1D5C96;
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: #BABABB;
+}
+
+.navbar-inverse .navbar-inner {
+  background-color: #382315;
+}
