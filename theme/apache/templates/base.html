@@ -40,6 +40,7 @@ under the License.
       padding-top: 60px;
       padding-bottom: 40px;
     }
+    {% include "styles.css" %}
   </style>
   <link href="{{base}}resources/css/bootstrap-responsive.css" rel="stylesheet">
   <link href="{{base}}resources/css/bval.css" rel="stylesheet">
@@ -130,7 +131,7 @@ under the License.
 
   <div class="container">
     <footer>
-      <p>Copyright © 2010-2020 The Apache Software Foundation. Licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.
+      <p>Copyright © 2010-{{CURRENTYEAR}} The Apache Software Foundation. Licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.
         View our <a href="{{base}}privacy-policy.html">privacy policy</a>.
       </p>
       <p>Apache and the Apache feather logo are trademarks of The Apache Software Foundation. Other names may be trademarks of their respective owners.

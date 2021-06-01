@@ -21,36 +21,36 @@ For the below build and TCK runs, it is assumed that you have the latest Sun
 
 1. Build the project and run the [JUnit][] tests:
 
-```sh
-    cd bval/trunk
-    mvn clean install
-```
+   ```sh
+   cd bval/trunk
+   mvn clean install
+   ```
 
 1. Run the JBoss provided TCK in standalone mode -
 
-```sh
-    cd bval/trunk/bval-tck11
-    mvn -Ptck
-```
+   ```sh
+   cd bval/trunk/bval-tck11
+   mvn -Ptck
+   ```
 
 #### In-container
 
 1. Build the project and run the [JUnit][] tests:
 
-```sh
-    cd bval/trunk
-    mvn clean install
-```
+   ```sh
+   cd bval/trunk
+   mvn clean install
+   ```
 
 1. Install [JBoss Application Server](http://www.jboss.org/jbossas); version
- 5.1.0 or later.
+   5.1.0 or later.
 1. Run the JBoss provided TCK in the in-container mode, against your JBoss AS
- installation (where `$jbosshome` denotes the installation path):
+   installation (where `$jbosshome` denotes the installation path):
 
-```sh
-    cd bval/trunk/bval-tck
-    mvn -Ptck,incontainer -Djboss.home=$jbosshome
-```
+   ```sh
+   cd bval/trunk/bval-tck
+   mvn -Ptck,incontainer -Djboss.home=$jbosshome
+   ```
 
 ### Certification against the JCP provided TCK
 

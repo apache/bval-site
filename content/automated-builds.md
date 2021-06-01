@@ -1,5 +1,7 @@
 Title: Automated Builds
 
+We're using the Apache Jenkins build server for continuous builds.
+
 <a name="AutomatedBuilds-JenkinsJobs"></a>
 ### Jenkins Jobs
 

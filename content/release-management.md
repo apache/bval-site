@@ -1,6 +1,7 @@
 Title: Release Management
-We'll be using the [Apache Nexus repository](http://repository.apache.org) for
 
+We'll be using the [Apache Nexus repository](http://repository.apache.org) for
+releasing `SNAPSHOT` and release artifacts, which uses the same LDAP groups
 as SVN to control who can publish artifacts using `groupId=org.apache.bval`.
 
 To familiarize yourself with the notions and requirements for releasing
