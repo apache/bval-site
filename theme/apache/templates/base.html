@@ -25,7 +25,7 @@ under the License.
   <meta name="author" content="dev@bval.apache.org" />
 
   <META http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <META name="Description" content="Apache BVal -- {% block title %}{% endblock %}" />
+  <META name="Description" content="Apache BVal -- {{ page.title }}" />
   <META name="Keywords" content="Apache BVal Bean Validation JSR-303 JavaEE6" />
   <META name="Owner" content="dev@bval.apache.org" />
   <META name="Robots" content="index, follow" />
@@ -120,7 +120,7 @@ under the License.
     </div>
   </div>
 
-  <div class="container" id="BValContent_{% block title %}{% endblock %}">
+  <div class="container" id="BValContent_{{ page.title }}">
 
 {% block content %}{% endblock %}
 
