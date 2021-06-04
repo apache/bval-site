@@ -4,12 +4,11 @@ Arduino® Light Theme - Stefania Mellai <s.mellai@arduino.cc>
 
 From https://raw.githubusercontent.com/highlightjs/highlight.js/main/src/styles/arduino-light.css
 
-Modified the background to be #f5f5f5
+Remove the background for .hljs class
 
 */
 
 .hljs {
-  background: #f7f7f9;
   color: #434f54;
 }
 
