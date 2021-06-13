@@ -1,0 +1,627 @@
+==== ./content/release-management.md
+1a2
+> 
+==== ./content/privacy-policy.md
+2,3c2,3
+< All materials provided on the Apache BVal website Copyright &#x00a9; 2010-2012,
+< The Apache Software Foundation and Licensed under [AL v2.0](http://www.apache.org/licenses/LICENSE-2.0).
+---
+> 
+> All materials provided on the Apache BVal website Copyright &#x00a9; 2010-2012, The Apache Software Foundation and Licensed under [AL v2.0](http://www.apache.org/licenses/LICENSE-2.0).
+==== ./content/obtaining-a-validator.md
+1a2
+> 
+5c6
+<     :::java
+---
+> ```java
+6a8
+> ```
+12c14
+<     :::java
+---
+> ```java
+14a17
+> ```
+29c32
+<     :::java
+---
+> ```java
+45a49
+> ```
+49c53
+<     :::java
+---
+> ```java
+50a55
+> ```
+58c63
+<     :::xml
+---
+> ```xml
+64a70
+> ```
+86c92
+<     :::xml
+---
+> ```xml
+91a98
+> ```
+102c109
+<     :::java
+---
+> ```java
+110a118
+> ```
+117c125
+<     :::java
+---
+> ```java
+136a145
+> ```
+148c157
+<     :::java
+---
+> ```java
+162a172
+> ```
+178c188
+<     :::java
+---
+> ```java
+202a213
+> ```
+==== ./content/people.md
+==== ./content/samples.md
+2,3c2,3
+< Here we have collected some Bean Validation samples from our project,
+< other projects at Apache, and other external projects that use a ASL 2.0
+---
+> 
+> Here we have collected some Bean Validation samples from our project, other projects at Apache, and other external projects that use a ASL 2.0
+==== ./content/mailing-lists.md
+==== ./content/release-process.md
+11,12c11
+< 1. Environment setup for releasing artifacts (same for `SNAPSHOT`s and
+< releases)
+---
+> 1. Environment setup for releasing artifacts (same for `SNAPSHOT`s and releases)
+26c25
+<                 :::sh
+---
+>       	 ```sh
+27a27
+>       	 ```
+34c34
+<             :::sh
+---
+>       ```sh
+35a36
+>       ```
+39,40c40
+<         1. The NOTICE files cover all third-party included files (like XSD
+< schemas)
+---
+>       1. The NOTICE files cover all third-party included files (like XSD schemas)
+54c54
+<             :::sh
+---
+>       ```sh
+55a56
+>       ```
+59c60
+<             :::text
+---
+>       ```text
+65a67
+>       ```
+79c81
+<             :::sh
+---
+>       ```sh
+80a83
+>       ```
+91c94
+<             :::sh
+---
+>       ```sh
+92a96
+>       ```
+104c108
+<         :::sh
+---
+>    ```sh
+105a110
+>    ```
+110c115
+<         :::sh
+---
+>    ```sh
+113a119
+>    ```
+122c128
+<             :::sh
+---
+>       ```sh
+123a130
+>       ```
+148c155
+<             :::text
+---
+>       ```text
+173a181
+>       ```
+177c185
+<             :::text
+---
+>       ```text
+191a200
+>       ```
+234c243
+<             :::text
+---
+>       ```text
+236a246
+>       ```
+252c262
+<             :::text
+---
+>       ```text
+275c285
+< 
+---
+>       ```
+284c294
+<             :::sh
+---
+>       ```sh
+285a296
+>       ```
+307c318
+<     :::sh
+---
+> ```sh
+311a323
+> ```
+315c327
+<     :::text
+---
+> ```text
+317a330
+> ```
+==== ./content/README.md
+==== ./content/coding-standards.md
+1a2
+> 
+==== ./content/found-a-bug.md
+1a2
+> 
+==== ./content/index.md
+==== ./content/documentation.md
+3c3
+<  website.
+---
+> 
+==== ./content/getting-involved.md
+1a2
+> 
+==== ./content/version-info.md
+1a2
+> 
+==== ./content/release-setup.md
+17c17
+<         :::sh
+---
+>    ```sh
+18a19
+>    ```
+30c31
+<         :::sh
+---
+>    ```sh
+32a34
+>    ```
+38c40
+<         :::sh
+---
+>    ```sh
+40a43
+>    ```
+48c51
+<         :::sh
+---
+>    ```sh
+50a54
+>    ```
+55c59
+<         :::sh
+---
+>    ```sh
+57a62
+>    ```
+61c66
+<         :::text
+---
+>    ```text
+62a68
+>    ```
+71c77
+<         :::sh
+---
+>    ```sh
+72a79
+>    ```
+87c94
+<         :::sh
+---
+>    ```sh
+88a96
+>    ```
+96,99c104,105
+<     *The generated keys are stored in `$HOME/.gnupg` or `%HOME%\Application
+< Data\gnupg` directory.*
+<     *Save the content in this directory to a safe medium. This contains your
+< private key used to sign all the BVal release materials.*
+---
+>    *The generated keys are stored in `$HOME/.gnupg` or `%HOME%\Application Data\gnupg` directory.*
+>    *Save the content in this directory to a safe medium. This contains your private key used to sign all the BVal release materials.*
+107c113
+<         :::sh
+---
+>    ```sh
+108a115
+>    ```
+125c132
+<     :::xml
+---
+> ```xml
+159a167
+> ```
+==== ./content/downloads.md
+21c21
+< - | - | - | -
+---
+> --|--|--|--
+46c46
+< - | - | - | -
+---
+> --|--|--|--
+89c89
+< - | - | - | -
+---
+> --|--|--|--
+162,163c162
+<     :::html
+< 
+---
+> ```html
+173a173
+> ```
+179c179
+<     :::html    
+---
+> ```html    
+194a195
+> ```
+212c213
+<     :::sh
+---
+> ```sh
+214a216
+> ```
+218c220
+<     :::sh
+---
+> ```sh
+220a223
+> ```
+224c227
+<     :::sh
+---
+> ```sh
+226a230
+> ```
+==== ./content/beanvalidation-tck.md
+24c24
+<         :::sh
+---
+>    ```sh
+26a27
+>    ```
+30c31
+<         :::sh
+---
+>    ```sh
+32a34
+>    ```
+38c40
+<         :::sh
+---
+>    ```sh
+40a43
+>    ```
+47c50
+<         :::sh
+---
+>    ```sh
+49a53
+>    ```
+==== ./content/automated-builds.md
+1a2
+> 
+2a4
+> 
+==== ./content/building.md
+1a2
+> 
+51c52
+<         :::sh
+---
+>    ```sh
+52a54
+>    ```
+56c58
+<         :::sh
+---
+>    ```sh
+57a60
+>    ```
+==== ./content/board-reports/2019-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2012-05.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2018-03.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2010-05.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2010-04.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2018-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2018-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2012-04.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2020-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2020-12.md
+1,17c1,2
+< Title:
+< Notice:    Licensed to the Apache Software Foundation (ASF) under one
+<            or more contributor license agreements.  See the NOTICE file
+<            distributed with this work for additional information
+<            regarding copyright ownership.  The ASF licenses this file
+<            to you under the Apache License, Version 2.0 (the
+<            "License"); you may not use this file except in compliance
+<            with the License.  You may obtain a copy of the License at
+<            .
+<              http://www.apache.org/licenses/LICENSE-2.0
+<            .
+<            Unless required by applicable law or agreed to in writing,
+<            software distributed under the License is distributed on an
+<            "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+<            KIND, either express or implied.  See the License for the
+<            specific language governing permissions and limitations
+<            under the License.
+---
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+==== ./content/board-reports/2019-03.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2011-01.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2018-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2020-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2019-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2019-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2017-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2015-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2020-04.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2012-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2010-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2017-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2015-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/index.md
+==== ./content/board-reports/2013-03.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2013-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2011-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2010-08.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2017-03.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2014-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2016-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2015-03.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2013-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2011-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2010-07.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2011-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2012-03.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2016-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2014-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2016-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2014-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2013-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2017-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2012-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2014-03.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2016-03.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2012-12.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2010-06.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./content/board-reports/2015-09.md
+0a1,3
+> Title: Board Report
+> Notice: http://www.apache.org/licenses/LICENSE-2.0
+> 
+==== ./README.md

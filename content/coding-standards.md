@@ -1,5 +1,6 @@
 Title: Coding Standards
 
+<a name="CodingStandards-ASFRequirements"></a>
 ## ASF Requirements
 
 <a name="CodingStandards-Copyrightnoticesforsubmittedpatches"></a>

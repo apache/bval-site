@@ -1,5 +1,6 @@
 Title: Getting Involved
 
+<a name="GettingInvolved-JointheApacheBValCommunity"></a>
 ## Join the Apache BVal Community
 
 The Apache BVal project is being built by the open source community for the

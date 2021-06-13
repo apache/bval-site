@@ -1,5 +1,6 @@
 Title: Version Info
 
+<a name="VersionInfo-Command-line"></a>
 ### Command-line
 
 To determine the Apache BVal version and revision you are using, run the

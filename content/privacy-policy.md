@@ -1,6 +1,6 @@
 Title: Privacy Policy
 
-The Apache Software Foundation and Licensed under [AL v2.0](http://www.apache.org/licenses/LICENSE-2.0).
+All materials provided on the Apache BVal website Copyright &#x00a9; 2010-2012, The Apache Software Foundation and Licensed under [AL v2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 Privacy Policy - Last Updated:	April 1, 2010
 

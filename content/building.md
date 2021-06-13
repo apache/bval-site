@@ -1,5 +1,6 @@
 Title: Building
 
+<a name="Building-Java"></a>
 ## Java
 
 You will need a recent version of Java SE 5 or later installed to build and run the JUnit tests.

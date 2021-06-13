@@ -1,5 +1,6 @@
 Title: Obtaining a validator
 
+To obtain a `Validator`, you must first create a `ValidatorFactory`. If there
 is only one Bean Validation implementation in your classpath, you can use:
 
 ```java

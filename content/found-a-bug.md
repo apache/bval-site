@@ -1,5 +1,6 @@
 Title: Found a Bug
 
+<a name="FoundaBug-FoundaBug?"></a>
 ## Found a Bug?
 
 If you think you've found a problem with Apache BVal, there are several
