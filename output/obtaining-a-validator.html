@@ -127,7 +127,8 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
 
   <div class="container" id="BValContent_Obtaining a validator">
 
-    <p>is only one Bean Validation implementation in your classpath, you can use:</p>
+    <p>To obtain a <code>Validator</code>, you must first create a <code>ValidatorFactory</code>. If there
+is only one Bean Validation implementation in your classpath, you can use:</p>
 <pre><code class="language-java">    ValidatorFactory vf = Validation.buildDefaultValidatorFactory();
 </code></pre>
 <p>to obtain the factory. If there are various implementations in the
