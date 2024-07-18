@@ -1,8 +1,8 @@
 Title: Downloads
 
 Apache BVal provides an implementation of the
-[Java Bean Validation][bv-spec] (JSR380) Specification
-which is TCK compliant and works on Java SE 8 or later.
+[Jakarta Bean Validation][bv-spec] Specification
+which is TCK compliant and works on Java SE 11 or later.
 
 Apache BVal artifacts are distributed in source and binary form under the
 terms of the [Apache License, Version 2.0][ALv2].
@@ -11,7 +11,7 @@ additional license information.  Please read the
 [Verifying Releases](#Downloads-VerifyingReleases) section below on
 how to verify the integrity of downloaded files.
 
-[bv-spec]: http://jcp.org/en/jsr/detail?id=380
+[bv-spec]: https://jakarta.ee/specifications/bean-validation/3.0/
 [ALv2]: http://www.apache.org/licenses/LICENSE-2.0
 
 ### Current Releases
