@@ -6,8 +6,8 @@ Title: Index
   </div>
   <div class="row">
     <p>Apache BVal delivers an implementation of the
-      <a href="http://jcp.org/en/jsr/detail?id=380">Java Bean Validation</a>
-      Specification which is TCK compliant, works on Java SE 8 or later, and uses the
+      <a href="https://jakarta.ee/specifications/bean-validation/3.0/">Jakarta Bean Validation 3.0</a>
+      Specification which is TCK compliant, works on Java SE 11 or later, and uses the
       <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Software License v2.0</a>.
     </p>
     <p>Previous releases provide support for different Java and Bean Validation versions.
