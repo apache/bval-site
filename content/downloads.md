@@ -16,29 +16,29 @@ how to verify the integrity of downloaded files.
 
 ### Current Releases
 
-#### Apache BVal 2.0.5 - Java 8 - Bean Validation v2.0 - Released October 26 2020
+#### Apache BVal 2.0.6 - Java 8 - Bean Validation v2.0 - Released June 13 2022
 Module | Artifact | Signatures | Comments
 --|--|--|--
-Source Distribution | [bval-parent-2.0.5-source-release.zip][src202] | [asc][src-asc202] [sha512][src-sha512202] | -
-JSR380 Implementation | [bval-jsr-2.0.5.jar][jsr202] | [asc][jsr-asc202] [md5][jsr-md5202] [sha1][jsr-sha1202] | `javax.validation.spi.ValidationProvider`
-Implementation Bundle | [org.apache.bval.bundle-2.0.5.jar][bundle202] | [asc][bundle-asc202] [md5][bundle-md5202] [sha1][bundle-sha1202] | `javax.validation.spi.ValidationProvider` w/ OSGi metadata (includes `bval-jsr`)
-Extra Routines and Constraints | [bval-extras-2.0.5.jar][bvextras202] | [asc][bvextras-asc202] [md5][bvextras-md5202] [sha1][bvextras-sha1202] | Optional module
+Source Distribution | [bval-parent-2.0.6-source-release.zip][src206] | [asc][src-asc206] [sha512][src-sha512206] | -
+JSR380 Implementation | [bval-jsr-2.0.6.jar][jsr206] | [asc][jsr-asc206] [md5][jsr-md5206] [sha1][jsr-sha1206] | `javax.validation.spi.ValidationProvider`
+Implementation Bundle | [org.apache.bval.bundle-2.0.6.jar][bundle206] | [asc][bundle-asc206] [md5][bundle-md5206] [sha1][bundle-sha1206] | `javax.validation.spi.ValidationProvider` w/ OSGi metadata (includes `bval-jsr`)
+Extra Routines and Constraints | [bval-extras-2.0.6.jar][bvextras206] | [asc][bvextras-asc206] [md5][bvextras-md5206] [sha1][bvextras-sha1206] | Optional module
 
-[src202]: http://www.apache.org/dyn/closer.cgi/bval/2.0.5/bval-parent-2.0.5-source-release.zip
-[src-asc202]: http://www.apache.org/dist/bval/2.0.5/bval-parent-2.0.5-source-release.zip.asc
-[src-sha512202]: http://www.apache.org/dist/bval/2.0.5/bval-parent-2.0.5-source-release.zip.sha512
-[jsr202]: http://repo1.maven.org/maven2/org/apache/bval/bval-jsr/2.0.5/bval-jsr-2.0.5.jar
-[jsr-asc202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/2.0.5/bval-jsr-2.0.5.jar.asc
-[jsr-md5202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/2.0.5/bval-jsr-2.0.5.jar.md5
-[jsr-sha1202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/2.0.5/bval-jsr-2.0.5.jar.sha1
-[bundle202]: http://repo1.maven.org/maven2/org/apache/bval/org.apache.bval.bundle/2.0.5/org.apache.bval.bundle-2.0.5.jar
-[bundle-asc202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/2.0.5/org.apache.bval.bundle-2.0.5.jar.asc
-[bundle-md5202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/2.0.5/org.apache.bval.bundle-2.0.5.jar.md5
-[bundle-sha1202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/2.0.5/org.apache.bval.bundle-2.0.5.jar.sha1
-[bvextras202]: http://repo1.maven.org/maven2/org/apache/bval/bval-extras/2.0.5/bval-extras-2.0.5.jar
-[bvextras-asc202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/2.0.5/bval-extras-2.0.5.jar.asc
-[bvextras-md5202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/2.0.5/bval-extras-2.0.5.jar.md5
-[bvextras-sha1202]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/2.0.5/bval-extras-2.0.5.jar.sha1
+[src206]: http://www.apache.org/dyn/closer.cgi/bval/2.0.6/bval-parent-2.0.6-source-release.zip
+[src-asc206]: http://www.apache.org/dist/bval/2.0.6/bval-parent-2.0.6-source-release.zip.asc
+[src-sha512206]: http://www.apache.org/dist/bval/2.0.6/bval-parent-2.0.6-source-release.zip.sha512
+[jsr206]: http://repo1.maven.org/maven2/org/apache/bval/bval-jsr/2.0.6/bval-jsr-2.0.6.jar
+[jsr-asc206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/2.0.6/bval-jsr-2.0.6.jar.asc
+[jsr-md5206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/2.0.6/bval-jsr-2.0.6.jar.md5
+[jsr-sha1206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/2.0.6/bval-jsr-2.0.6.jar.sha1
+[bundle206]: http://repo1.maven.org/maven2/org/apache/bval/org.apache.bval.bundle/2.0.6/org.apache.bval.bundle-2.0.6.jar
+[bundle-asc206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/2.0.6/org.apache.bval.bundle-2.0.6.jar.asc
+[bundle-md5206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/2.0.6/org.apache.bval.bundle-2.0.6.jar.md5
+[bundle-sha1206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/2.0.6/org.apache.bval.bundle-2.0.6.jar.sha1
+[bvextras206]: http://repo1.maven.org/maven2/org/apache/bval/bval-extras/2.0.6/bval-extras-2.0.6.jar
+[bvextras-asc206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/2.0.6/bval-extras-2.0.6.jar.asc
+[bvextras-md5206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/2.0.6/bval-extras-2.0.6.jar.md5
+[bvextras-sha1206]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/2.0.6/bval-extras-2.0.6.jar.sha1
 
 #### Apache BVal 1.1.2 - Java 6 - Bean Validation v1.1 - Released Nov 3 2016
 
