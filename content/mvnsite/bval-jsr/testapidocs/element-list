@@ -1,0 +1,12 @@
+org.apache.bval.constraints
+org.apache.bval.jsr
+org.apache.bval.jsr.example
+org.apache.bval.jsr.extensions
+org.apache.bval.jsr.groups
+org.apache.bval.jsr.groups.implicit
+org.apache.bval.jsr.groups.inheritance
+org.apache.bval.jsr.groups.redefining
+org.apache.bval.jsr.issues
+org.apache.bval.jsr.metadata
+org.apache.bval.jsr.util
+org.apache.bval.jsr.xml

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.apache.bval.arquillian","l":"BValArquillianExtension"},{"p":"org.apache.bval.arquillian.jndi","l":"BValJndiFactory"},{"p":"org.apache.bval.arquillian","l":"EJBEnricher"},{"p":"org.apache.bval.arquillian","l":"LogTckFormatter"},{"p":"org.apache.bval.arquillian","l":"BValArquillianExtension.TestLogger"}]
