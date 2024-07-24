@@ -19,10 +19,10 @@ how to verify the integrity of downloaded files.
 #### Apache BVal 3.0.1 - Java 11 - Jakarta Bean Validation 3.0 - Released July 23, 2024
 Module | Artifact | Signatures | Comments
 --|--|--|--
-Source Distribution | [bval-parent-3.0.0-source-release.zip][src301] | [asc][src-asc301] [sha512][src-sha512301] | -
-Jakarta Bean Validation 3.0 Implementation | [bval-jsr-3.0.0.jar][jsr301] | [asc][jsr-asc301] [md5][jsr-md5301] [sha1][jsr-sha1301] | `jakarta.validation.spi.ValidationProvider`
-Implementation Bundle | [org.apache.bval.bundle-3.0.0.jar][bundle301] | [asc][bundle-asc301] [md5][bundle-md5301] [sha1][bundle-sha1301] | `jakarta.validation.spi.ValidationProvider` w/ OSGi metadata (includes `bval-jsr`)
-Extra Routines and Constraints | [bval-extras-3.0.0.jar][bvextras301] | [asc][bvextras-asc301] [md5][bvextras-md5301] [sha1][bvextras-sha1301] | Optional module
+Source Distribution | [bval-parent-3.0.1-source-release.zip][src301] | [asc][src-asc301] [sha512][src-sha512301] | -
+Jakarta Bean Validation 3.0 Implementation | [bval-jsr-3.0.1.jar][jsr301] | [asc][jsr-asc301] [md5][jsr-md5301] [sha1][jsr-sha1301] | `jakarta.validation.spi.ValidationProvider`
+Implementation Bundle | [org.apache.bval.bundle-3.0.1.jar][bundle301] | [asc][bundle-asc301] [md5][bundle-md5301] [sha1][bundle-sha1301] | `jakarta.validation.spi.ValidationProvider` w/ OSGi metadata (includes `bval-jsr`)
+Extra Routines and Constraints | [bval-extras-3.0.1.jar][bvextras301] | [asc][bvextras-asc301] [md5][bvextras-md5301] [sha1][bvextras-sha1301] | Optional module
 
 [src301]: https://www.apache.org/dyn/closer.cgi/bval/3.0.1/bval-parent-3.0.1-source-release.zip
 [src-asc301]: https://www.apache.org/dist/bval/3.0.1/bval-parent-3.0.1-source-release.zip.asc
