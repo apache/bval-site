@@ -1,5 +1,6 @@
 org.apache.bval.constraints
 org.apache.bval.jsr
+org.apache.bval.jsr.cdi
 org.apache.bval.jsr.example
 org.apache.bval.jsr.extensions
 org.apache.bval.jsr.groups
