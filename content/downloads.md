@@ -16,29 +16,29 @@ how to verify the integrity of downloaded files.
 
 ### Current Releases
 
-#### Apache BVal 3.0.1 - Java 11 - Jakarta Bean Validation 3.0 - Released July 23, 2024
+#### Apache BVal 3.0.2 - Java 11 - Jakarta Bean Validation 3.0 - Released March 15, 2025
 Module | Artifact | Signatures | Comments
 --|--|--|--
-Source Distribution | [bval-parent-3.0.1-source-release.zip][src301] | [asc][src-asc301] [sha512][src-sha512301] | -
-Jakarta Bean Validation 3.0 Implementation | [bval-jsr-3.0.1.jar][jsr301] | [asc][jsr-asc301] [md5][jsr-md5301] [sha1][jsr-sha1301] | `jakarta.validation.spi.ValidationProvider`
-Implementation Bundle | [org.apache.bval.bundle-3.0.1.jar][bundle301] | [asc][bundle-asc301] [md5][bundle-md5301] [sha1][bundle-sha1301] | `jakarta.validation.spi.ValidationProvider` w/ OSGi metadata (includes `bval-jsr`)
-Extra Routines and Constraints | [bval-extras-3.0.1.jar][bvextras301] | [asc][bvextras-asc301] [md5][bvextras-md5301] [sha1][bvextras-sha1301] | Optional module
+Source Distribution | [bval-parent-3.0.2-source-release.zip][src302] | [asc][src-asc302] [sha512][src-sha512302] | -
+Jakarta Bean Validation 3.0 Implementation | [bval-jsr-3.0.2.jar][jsr302] | [asc][jsr-asc302] [md5][jsr-md5302] [sha1][jsr-sha1302] | `jakarta.validation.spi.ValidationProvider`
+Implementation Bundle | [org.apache.bval.bundle-3.0.2.jar][bundle302] | [asc][bundle-asc302] [md5][bundle-md5302] [sha1][bundle-sha1302] | `jakarta.validation.spi.ValidationProvider` w/ OSGi metadata (includes `bval-jsr`)
+Extra Routines and Constraints | [bval-extras-3.0.2.jar][bvextras302] | [asc][bvextras-asc302] [md5][bvextras-md5302] [sha1][bvextras-sha1302] | Optional module
 
-[src301]: https://www.apache.org/dyn/closer.cgi/bval/3.0.1/bval-parent-3.0.1-source-release.zip
-[src-asc301]: https://www.apache.org/dist/bval/3.0.1/bval-parent-3.0.1-source-release.zip.asc
-[src-sha512301]: https://www.apache.org/dist/bval/3.0.1/bval-parent-3.0.1-source-release.zip.sha512
-[jsr301]: https://repo1.maven.org/maven2/org/apache/bval/bval-jsr/3.0.1/bval-jsr-3.0.1.jar
-[jsr-asc301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.0.1/bval-jsr-3.0.1.jar.asc
-[jsr-md5301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.0.1/bval-jsr-3.0.1.jar.md5
-[jsr-sha1301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.0.1/bval-jsr-3.0.1.jar.sha1
-[bundle301]: https://repo1.maven.org/maven2/org/apache/bval/org.apache.bval.bundle/3.0.1/org.apache.bval.bundle-3.0.1.jar
-[bundle-asc301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.0.1/org.apache.bval.bundle-3.0.1.jar.asc
-[bundle-md5301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.0.1/org.apache.bval.bundle-3.0.1.jar.md5
-[bundle-sha1301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.0.1/org.apache.bval.bundle-3.0.1.jar.sha1
-[bvextras301]: https://repo1.maven.org/maven2/org/apache/bval/bval-extras/3.0.1/bval-extras-3.0.1.jar
-[bvextras-asc301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.0.1/bval-extras-3.0.1.jar.asc
-[bvextras-md5301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.0.1/bval-extras-3.0.1.jar.md5
-[bvextras-sha1301]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.0.1/bval-extras-3.0.1.jar.sha1
+[src302]: https://www.apache.org/dyn/closer.cgi/bval/bval-3.0.2/bval-parent-3.0.2-source-release.zip
+[src-asc302]: https://www.apache.org/dist/bval/3.0.2/bval-parent-3.0.2-source-release.zip.asc
+[src-sha512302]: https://www.apache.org/dist/bval/3.0.2/bval-parent-3.0.2-source-release.zip.sha512
+[jsr302]: https://repo1.maven.org/maven2/org/apache/bval/bval-jsr/3.0.2/bval-jsr-3.0.2.jar
+[jsr-asc302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.0.2/bval-jsr-3.0.2.jar.asc
+[jsr-md5302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.0.2/bval-jsr-3.0.2.jar.md5
+[jsr-sha1302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.0.2/bval-jsr-3.0.2.jar.sha1
+[bundle302]: https://repo1.maven.org/maven2/org/apache/bval/org.apache.bval.bundle/3.0.2/org.apache.bval.bundle-3.0.2.jar
+[bundle-asc302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.0.2/org.apache.bval.bundle-3.0.2.jar.asc
+[bundle-md5302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.0.2/org.apache.bval.bundle-3.0.2.jar.md5
+[bundle-sha1302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.0.2/org.apache.bval.bundle-3.0.2.jar.sha1
+[bvextras302]: https://repo1.maven.org/maven2/org/apache/bval/bval-extras/3.0.2/bval-extras-3.0.2.jar
+[bvextras-asc302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.0.2/bval-extras-3.0.2.jar.asc
+[bvextras-md5302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.0.2/bval-extras-3.0.2.jar.md5
+[bvextras-sha1302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.0.2/bval-extras-3.0.2.jar.sha1
 
 #### Apache BVal 2.0.6 - Java 8 - Bean Validation v2.0 - Released June 13 2022
 Module | Artifact | Signatures | Comments
