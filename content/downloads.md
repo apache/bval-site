@@ -25,8 +25,8 @@ Implementation Bundle | [org.apache.bval.bundle-3.0.2.jar][bundle302] | [asc][bu
 Extra Routines and Constraints | [bval-extras-3.0.2.jar][bvextras302] | [asc][bvextras-asc302] [md5][bvextras-md5302] [sha1][bvextras-sha1302] | Optional module
 
 [src302]: https://www.apache.org/dyn/closer.cgi/bval/bval-3.0.2/bval-parent-3.0.2-source-release.zip
-[src-asc302]: https://www.apache.org/dist/bval/3.0.2/bval-parent-3.0.2-source-release.zip.asc
-[src-sha512302]: https://www.apache.org/dist/bval/3.0.2/bval-parent-3.0.2-source-release.zip.sha512
+[src-asc302]: https://www.apache.org/dist/bval/bval-3.0.2/bval-parent-3.0.2-source-release.zip.asc
+[src-sha512302]: https://www.apache.org/dist/bval/bval-3.0.2/bval-parent-3.0.2-source-release.zip.sha512
 [jsr302]: https://repo1.maven.org/maven2/org/apache/bval/bval-jsr/3.0.2/bval-jsr-3.0.2.jar
 [jsr-asc302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.0.2/bval-jsr-3.0.2.jar.asc
 [jsr-md5302]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.0.2/bval-jsr-3.0.2.jar.md5
