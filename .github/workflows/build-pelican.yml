@@ -19,17 +19,17 @@
 name: Build Pelican Website
 on:
   push:
-    branches: [ "main" ]
+    # main publishes the live site; preview/* branches build to the
+    # asf-staging branch, served at https://bval.staged.apache.org
+    branches: [ "main", "preview/*" ]
   workflow_dispatch:
 jobs:
   build-pelican:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: 'main'
       - uses: apache/infrastructure-actions/pelican@main
         with:
-          destination: 'asf-site'
+          destination: ${{ github.ref_name == 'main' && 'asf-site' || 'asf-staging' }}
           gfm: 'true'
           requirements: 'requirements.txt'

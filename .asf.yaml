@@ -1,7 +1,6 @@
 staging:
   profile: ~
-  whoami: asf-site
-  autostage: preview/*
+  whoami: asf-staging
 
 publish:
   whoami: asf-site
