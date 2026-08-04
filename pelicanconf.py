@@ -72,6 +72,12 @@ READERS = {'html': None}
 # that content/ contains articles.
 ARTICLE_PATHS = ['articles']
 
+# The Maven-generated site under mvnsite/ is served verbatim as static files;
+# its *.md files (javadoc legal notices) have no Pelican metadata and must not
+# be processed as pages. The './' prefix is required to match the walk rooted
+# at PAGE_PATHS = ['.'].
+PAGE_EXCLUDES = ['./mvnsite']
+
 # ignore README.md files in the content tree and the interviews and include folders.
 IGNORE_FILES = ['README.md']
 
@@ -93,20 +99,20 @@ THEME = './theme/apache'
 # DEFAULT_DATE = 'fs'
 
 # Pelican Plugins
-# pelican-gfm is installed in the buildbot as part of build_pelican.py. It is an ASF Infra custom plugin.
-# other plugins are discoverable and can be installed via pip by mentioning them in requirements.txt
+# The ASF Infra plugins (gfm, asfgenid, asfdata, asfreader, ...) ship with the
+# apache/infrastructure-actions/pelican GitHub Action, which appends its plugins
+# directory to PLUGIN_PATHS at build time.
+# Other plugins can be installed via pip by mentioning them in requirements.txt.
 # You can find plugins here: https://github.com/pelican-plugins
 # Plugins that are custom for this site are found in PLUGIN_PATHS.
 PLUGIN_PATHS = ['./theme/plugins']
-# PLUGINS = ['asfgenid', 'asfdata', 'pelican-gfm', 'asfreader']
-# We are using the default plugin - 'pelican-gfm' which is installed by the build
-PLUGINS = ['asfgenid', 'pelican-gfm']
+PLUGINS = ['gfm', 'asfgenid']
 
 # Lifecycle and plugins:
 # (1) Initialization:
 #     asfdata - populate a sitewide dictionary of ASF_DATA
 # (2) Readers process content into metadata and html
-#     pelican-gfm (GFMReader) - reads GFM Markdown with metadata and generates html
+#     gfm (GFMReader) - reads GFM Markdown with metadata and generates html
 #     asfreader (ASFReader) - reads GFM Markdown with embedded ezt templates uses metadata enhanced
 #          by the sitewide dictionary to generate markdown with ezt and then generate html
 # (3) HTML Content enhancement
