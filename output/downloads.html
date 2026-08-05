@@ -116,8 +116,9 @@ dt:hover > .headerlink, p:hover > .headerlink, td:hover > .headerlink, h1:hover 
   <div class="container" id="BValContent_Downloads">
 
     <p>Apache BVal provides an implementation of the
-<a href="https://jakarta.ee/specifications/bean-validation/3.0/">Jakarta Bean Validation</a> Specification
-which is TCK compliant and works on Java SE 11 or later.</p>
+<a href="https://jakarta.ee/specifications/bean-validation/3.1/">Jakarta Bean Validation</a> Specification
+which is TCK compliant.  The current release requires Java SE 17 or later;
+earlier releases support Java SE 11 and below.</p>
 <p>Apache BVal artifacts are distributed in source and binary form under the
 terms of the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
 See the included <code>LICENSE</code> and <code>NOTICE</code> files included in each artifact for
@@ -125,6 +126,41 @@ additional license information.  Please read the
 <a href="#Downloads-VerifyingReleases">Verifying Releases</a> section below on
 how to verify the integrity of downloaded files.</p>
 <h3 id="current-releases">Current Releases<a class="headerlink" href="#current-releases" title="Permalink">&para;</a></h3>
+<h4 id="apache-bval-310-java-17-jakarta-bean-validation-31-released-august-5-2025">Apache BVal 3.1.0 - Java 17 - Jakarta Bean Validation 3.1 - Released August 5, 2025<a class="headerlink" href="#apache-bval-310-java-17-jakarta-bean-validation-31-released-august-5-2025" title="Permalink">&para;</a></h4>
+<table class="table">
+<thead>
+<tr>
+<th>Module</th>
+<th>Artifact</th>
+<th>Signatures</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Distribution</td>
+<td><a href="https://www.apache.org/dyn/closer.cgi/bval/bval-3.1.0/bval-parent-3.1.0-source-release.zip">bval-parent-3.1.0-source-release.zip</a></td>
+<td><a href="https://www.apache.org/dist/bval/bval-3.1.0/bval-parent-3.1.0-source-release.zip.asc">asc</a> <a href="https://www.apache.org/dist/bval/bval-3.1.0/bval-parent-3.1.0-source-release.zip.sha512">sha512</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Jakarta Bean Validation 3.1 Implementation</td>
+<td><a href="https://repo1.maven.org/maven2/org/apache/bval/bval-jsr/3.1.0/bval-jsr-3.1.0.jar">bval-jsr-3.1.0.jar</a></td>
+<td><a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.1.0/bval-jsr-3.1.0.jar.asc">asc</a> <a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.1.0/bval-jsr-3.1.0.jar.md5">md5</a> <a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.1.0/bval-jsr-3.1.0.jar.sha1">sha1</a></td>
+<td><code>jakarta.validation.spi.ValidationProvider</code></td>
+</tr>
+<tr>
+<td>Implementation Bundle</td>
+<td><a href="https://repo1.maven.org/maven2/org/apache/bval/org.apache.bval.bundle/3.1.0/org.apache.bval.bundle-3.1.0.jar">org.apache.bval.bundle-3.1.0.jar</a></td>
+<td><a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.1.0/org.apache.bval.bundle-3.1.0.jar.asc">asc</a> <a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.1.0/org.apache.bval.bundle-3.1.0.jar.md5">md5</a> <a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.1.0/org.apache.bval.bundle-3.1.0.jar.sha1">sha1</a></td>
+<td><code>jakarta.validation.spi.ValidationProvider</code> w/ OSGi metadata (includes <code>bval-jsr</code>)</td>
+</tr>
+<tr>
+<td>Extra Routines and Constraints</td>
+<td><a href="https://repo1.maven.org/maven2/org/apache/bval/bval-extras/3.1.0/bval-extras-3.1.0.jar">bval-extras-3.1.0.jar</a></td>
+<td><a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.1.0/bval-extras-3.1.0.jar.asc">asc</a> <a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.1.0/bval-extras-3.1.0.jar.md5">md5</a> <a href="https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.1.0/bval-extras-3.1.0.jar.sha1">sha1</a></td>
+<td>Optional module</td>
+</tr></tbody></table>
 <h4 id="apache-bval-302-java-11-jakarta-bean-validation-30-released-march-15-2025">Apache BVal 3.0.2 - Java 11 - Jakarta Bean Validation 3.0 - Released March 15, 2025<a class="headerlink" href="#apache-bval-302-java-11-jakarta-bean-validation-30-released-march-15-2025" title="Permalink">&para;</a></h4>
 <table class="table">
 <thead>
