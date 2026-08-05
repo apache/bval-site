@@ -2,7 +2,8 @@ Title: Downloads
 
 Apache BVal provides an implementation of the
 [Jakarta Bean Validation][bv-spec] Specification
-which is TCK compliant and works on Java SE 11 or later.
+which is TCK compliant.  The current release requires Java SE 17 or later;
+earlier releases support Java SE 11 and below.
 
 Apache BVal artifacts are distributed in source and binary form under the
 terms of the [Apache License, Version 2.0][ALv2].
@@ -11,10 +12,35 @@ additional license information.  Please read the
 [Verifying Releases](#Downloads-VerifyingReleases) section below on
 how to verify the integrity of downloaded files.
 
-[bv-spec]: https://jakarta.ee/specifications/bean-validation/3.0/
+[bv-spec]: https://jakarta.ee/specifications/bean-validation/3.1/
 [ALv2]: http://www.apache.org/licenses/LICENSE-2.0
 
 ### Current Releases
+
+#### Apache BVal 3.1.0 - Java 17 - Jakarta Bean Validation 3.1 - Released August 5, 2025
+Module | Artifact | Signatures | Comments
+--|--|--|--
+Source Distribution | [bval-parent-3.1.0-source-release.zip][src310] | [asc][src-asc310] [sha512][src-sha512310] | -
+Jakarta Bean Validation 3.1 Implementation | [bval-jsr-3.1.0.jar][jsr310] | [asc][jsr-asc310] [md5][jsr-md5310] [sha1][jsr-sha1310] | `jakarta.validation.spi.ValidationProvider`
+Implementation Bundle | [org.apache.bval.bundle-3.1.0.jar][bundle310] | [asc][bundle-asc310] [md5][bundle-md5310] [sha1][bundle-sha1310] | `jakarta.validation.spi.ValidationProvider` w/ OSGi metadata (includes `bval-jsr`)
+Extra Routines and Constraints | [bval-extras-3.1.0.jar][bvextras310] | [asc][bvextras-asc310] [md5][bvextras-md5310] [sha1][bvextras-sha1310] | Optional module
+
+[src310]: https://www.apache.org/dyn/closer.cgi/bval/bval-3.1.0/bval-parent-3.1.0-source-release.zip
+[src-asc310]: https://www.apache.org/dist/bval/bval-3.1.0/bval-parent-3.1.0-source-release.zip.asc
+[src-sha512310]: https://www.apache.org/dist/bval/bval-3.1.0/bval-parent-3.1.0-source-release.zip.sha512
+[jsr310]: https://repo1.maven.org/maven2/org/apache/bval/bval-jsr/3.1.0/bval-jsr-3.1.0.jar
+[jsr-asc310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.1.0/bval-jsr-3.1.0.jar.asc
+[jsr-md5310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.1.0/bval-jsr-3.1.0.jar.md5
+[jsr-sha1310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-jsr/3.1.0/bval-jsr-3.1.0.jar.sha1
+[bundle310]: https://repo1.maven.org/maven2/org/apache/bval/org.apache.bval.bundle/3.1.0/org.apache.bval.bundle-3.1.0.jar
+[bundle-asc310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.1.0/org.apache.bval.bundle-3.1.0.jar.asc
+[bundle-md5310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.1.0/org.apache.bval.bundle-3.1.0.jar.md5
+[bundle-sha1310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/org.apache.bval.bundle/3.1.0/org.apache.bval.bundle-3.1.0.jar.sha1
+[bvextras310]: https://repo1.maven.org/maven2/org/apache/bval/bval-extras/3.1.0/bval-extras-3.1.0.jar
+[bvextras-asc310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.1.0/bval-extras-3.1.0.jar.asc
+[bvextras-md5310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.1.0/bval-extras-3.1.0.jar.md5
+[bvextras-sha1310]: https://repository.apache.org/content/repositories/releases/org/apache/bval/bval-extras/3.1.0/bval-extras-3.1.0.jar.sha1
+
 
 #### Apache BVal 3.0.2 - Java 11 - Jakarta Bean Validation 3.0 - Released March 15, 2025
 Module | Artifact | Signatures | Comments
